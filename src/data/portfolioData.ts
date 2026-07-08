@@ -1,7 +1,7 @@
 export const portfolioData = {
   name: 'Kunal Singh',
   title: 'Software Engineer',
-  role: 'Frontend Developer & IT Graduate',
+  role: 'Frontend Developer',
   location: 'Greater Noida, Uttar Pradesh, India',
   phone: '+91 9318324804',
   email: 'kunalsingh839469@gmail.com',
