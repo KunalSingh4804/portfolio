@@ -12,6 +12,7 @@ const navItems = [
   { to: '/', label: 'Home', end: true },
   { to: '/about', label: 'About' },
   { to: '/resume', label: 'Resume' },
+  { to: '/skills', label: 'Skills' },
   { to: '/portfolio', label: 'Portfolio' },
   { to: '/achievements', label: 'Achievements' },
   { to: '/contact', label: 'Contact' },
