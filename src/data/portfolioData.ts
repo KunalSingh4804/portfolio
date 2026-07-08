@@ -86,6 +86,7 @@ export const portfolioData = {
       description:
         'Responsive business website for an interior design studio with service pages, project galleries, consultation forms, and inquiry workflows. Built with intuitive navigation, form validation, and performance-focused UX.',
       tags: ['React.js', 'Vite', 'Tailwind CSS', 'Firebase', 'React Router', 'React Hook Form', 'Framer Motion', 'EmailJS'],
+      live: 'https://kunalsingh4804.github.io/Refined-style-interiors/',
       image: 'https://images.unsplash.com/photo-1618221195710-dd6b41fa6046?auto=format&fit=crop&w=1200&q=80',
     },
     {
