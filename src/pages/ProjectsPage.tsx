@@ -14,7 +14,22 @@ export function ProjectsPage() {
       <div className="container" style={{ display: 'grid', gap: '1.25rem', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))' }}>
         {portfolioData.projects.map((project, index) => (
           <motion.article initial={{ opacity: 0, y: 18 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ delay: index * 0.08 }} className="glass" data-hover style={{ padding: '1.1rem', borderRadius: '1.35rem', overflow: 'hidden' }} key={project.title}>
-            <a className="hover-image" href={project.live} target="_blank" rel="noreferrer" aria-label={`View live site for ${project.title}`}>
+            {'live' in project && project.live ? (
+              <a className="hover-image" href={project.live} target="_blank" rel="noreferrer" aria-label={`View live site for ${project.title}`}>
+                <img
+                  src={getProjectImageSrc(project.image)}
+                  alt={`${project.title} preview`}
+                  style={{
+                    height: '180px',
+                    width: '100%',
+                    objectFit: 'imageFit' in project && project.imageFit === 'contain' ? 'contain' : 'cover',
+                    background: 'imageBackground' in project && project.imageBackground ? project.imageBackground : 'transparent',
+                    padding: 'imageFit' in project && project.imageFit === 'contain' ? '1rem' : 0,
+                    borderRadius: '1rem',
+                  }}
+                />
+              </a>
+            ) : (
               <img
                 src={getProjectImageSrc(project.image)}
                 alt={`${project.title} preview`}
@@ -27,7 +42,7 @@ export function ProjectsPage() {
                   borderRadius: '1rem',
                 }}
               />
-            </a>
+            )}
             <div style={{ paddingTop: '1rem' }}>
               <p style={{ color: '#38bdf8', fontWeight: 600 }}>{project.category}</p>
               <h3 style={{ margin: '0.35rem 0' }}>{project.title}</h3>

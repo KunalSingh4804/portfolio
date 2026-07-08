@@ -81,6 +81,14 @@ export const portfolioData = {
       image: 'https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1200&q=80',
     },
     {
+      title: 'Refined Style Interiors Website',
+      category: 'Frontend — Interior Design Studio',
+      description:
+        'Responsive business website for an interior design studio with service pages, project galleries, consultation forms, and inquiry workflows. Built with intuitive navigation, form validation, and performance-focused UX.',
+      tags: ['React.js', 'Vite', 'Tailwind CSS', 'Firebase', 'React Router', 'React Hook Form', 'Framer Motion', 'EmailJS'],
+      image: 'https://images.unsplash.com/photo-1618221195710-dd6b41fa6046?auto=format&fit=crop&w=1200&q=80',
+    },
+    {
       title: 'TravelNex Solutions',
       category: 'Full Stack — Travel Management Platform',
       description:
