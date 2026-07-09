@@ -72,6 +72,15 @@ export const portfolioData = {
       imageBackground: '#ffffff',
     },
     {
+      title: 'DevSphere AI',
+      category: 'Full Stack — AI Developer Productivity Platform',
+      description:
+        'Comprehensive AI-powered developer productivity platform that streamlines the software development lifecycle with intelligent coding assistance, project management, real-time collaboration, automated code reviews, documentation generation, and GitHub integration in a unified workspace. Built for scalability, security, responsive design, and intuitive enterprise SaaS workflows.',
+      tags: ['React', 'TypeScript', 'Node.js', 'Express.js', 'MongoDB', 'Socket.io', 'JWT', 'Tailwind CSS', 'Gemini API', 'GitHub API'],
+      live: 'https://kunalsingh4804.github.io/ai-developer-assistant/',
+      image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80',
+    },
+    {
       title: 'Neighbourlly',
       category: 'Full Stack — Geo-Fenced Platform',
       description:
